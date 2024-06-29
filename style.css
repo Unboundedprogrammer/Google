@@ -1,0 +1,187 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font: 13px / 27px Roboto, Arial, sans-serif;
+}
+
+ header{
+    position: relative;
+    align-items: center;
+    top:4px;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+   
+}
+ header ul{
+    display: flex;
+    justify-content: center;
+    margin-right: 28px;
+    vertical-align: middle;
+}
+ header ul li{
+    list-style: none;
+    padding-right: 22px ;
+}
+header li img.apps_icon{
+    width: 20px;
+}
+
+
+header ul li a{
+    color:#111;
+    text-decoration: none;
+    font-size: 15px;
+}
+ header ul li > a:hover{
+    text-decoration: underline;
+}
+ header ul li button{
+    margin-top: -8px;
+    color: white;
+    font-weight:normal;
+    font-size: 16px;
+    border-radius: 28px;
+    border: none;
+    padding: 9px 15px;
+    background-color: #005eff;
+    vertical-align: middle;
+    cursor:pointer;
+
+}
+header ul li button:hover{
+    scale: 1.02;
+    background-color:  #2670ef;
+}
+
+section article{
+    height: 537px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+article div #google{
+   
+   width: 281px;
+   height: 93px;
+   position: relative;
+   margin-bottom: 18px;
+}
+
+article div input.search{
+
+    line-height: 40px;
+    width: 480px;
+    border:1px solid #d6d5d5;
+    border-radius: 55px;
+    outline: none;
+    cursor:auto;
+    padding-left: 70px;
+    padding-right: 80px;
+    
+                    
+}
+article div input.search:hover{
+    
+    box-shadow:  2px 2px 4px rgb(186, 186, 186);
+}
+
+article div div div.icons{
+   
+    margin-top: -44px;
+    padding: 4px 13px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+article div div div   img.icon{
+    width:30px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+    
+    
+}
+article div div a button.button{
+    margin-top: 40px;
+    background-color: rgb(247, 246, 246);
+    border: none;
+    border-radius: 5px;
+    padding: 9px;
+    font-size: 13px;
+   
+    
+}
+article div div a button.button:hover{
+    cursor:pointer;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(197, 197, 197);
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+article div div.language{
+    margin:15px;
+}
+article div span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+} 
+footer{
+    width:100%;
+   background-color: rgb(244, 244, 244);
+   font-size: 15px;
+   height: 120px;
+  
+}
+footer div.bd{
+    
+   padding: 4px 65px;
+  border-bottom: 0.5px solid rgb(140, 139, 139);
+}
+footer div.list{
+    padding: 5px 28px;
+    
+}
+footer div ul{ 
+    
+    display: flex;
+    justify-content: space-between;
+  
+}
+footer div ul div  li{
+   display: inline;
+    list-style: none;
+    padding: 5px;
+}
+footer div ul a{                                                                                                                  
+   text-decoration: none;
+     color: #111 ; 
+}
+
+/* Mobile View*/
+
+@media (max-width:500px){
+    header{
+        padding: 5px 34px;
+    }
+    section article{
+        height: 600px;
+    }
+    article div input.search{
+        max-width:300px;
+        padding-right: 8px;
+      
+    }  
+    footer div.list {
+        position: absolute;
+        
+        padding: 0px 4px;
+        padding-bottom: 15px;
+        
+    } 
+}
